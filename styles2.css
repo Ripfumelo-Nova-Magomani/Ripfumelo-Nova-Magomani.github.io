@@ -1,0 +1,98 @@
+/* ... other styles ... */
+
+/* Interactive UI Elements */
+
+.btn-transition {
+    padding: 10px 20px;
+    background-color: #3498db;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-transition:hover {
+    background-color: #2980b9;
+  }
+  
+  .slider-transform {
+    width: 100%;
+    cursor: ew-resize;
+    transition: transform 0.3s;
+  }
+  
+  .slider-transform:hover {
+    transform: scaleY(1.5);
+  }
+  
+  .toggle-container {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+  }
+  
+  .toggle-input {
+    display: none;
+  }
+  
+  .toggle-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: transform 0.4s;
+    border-radius: 30px;
+  }
+  
+  .toggle-input:checked + .toggle-slider {
+    background-color: #3498db;
+  }
+  
+  /* Pseudo-Elements Section */
+  
+  .pseudo-content {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #3498db;
+    cursor: pointer;
+  }
+  
+  .pseudo-content::before, .pseudo-content::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #3498db;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  
+  .pseudo-content::before {
+    top: 10px;
+    left: 10px;
+    transform: scale(0);
+  }
+  
+  .pseudo-content::after {
+    bottom: 10px;
+    right: 10px;
+    transform: scale(0);
+  }
+  
+  .pseudo-content:hover::before, .pseudo-content:hover::after {
+    transform: scale(1);
+  }
+  
+  /* 3D Cube */
+  /* ... (cube styles, including 3D transforms, perspective, etc.) ... */
+  
+  /* Custom Cursor */
+  
+  body {
+    cursor: url('path-to-your-cursor.png'), auto;
+  }
+  
+  /* ... other styles ... */
